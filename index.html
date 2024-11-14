@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memória - Tecnologia</title>
+    <!-- Linkando o arquivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Título do jogo -->
+        <h1>Jogo da Memória - Tecnologia</h1>
+        
+        <!-- Contador de movimentos -->
+        <div id="moves">Movimentos: 0</div>
+        
+        <!-- Grid onde as cartas serão renderizadas -->
+        <div id="game-board"></div>
+        
+        <!-- Mensagem de vitória (inicialmente oculta) -->
+        <div id="win-message" class="hidden">
+            <h2>Parabéns! Você venceu!</h2>
+            <p id="final-moves"></p>
+            <button id="restart-button">Jogar Novamente</button>
+        </div>
+    </div>
+
+    <!-- Linkando o arquivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>

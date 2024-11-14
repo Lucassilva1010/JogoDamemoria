@@ -1,0 +1,84 @@
+/* Estilos gerais da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container principal do jogo */
+.container {
+    text-align: center;
+}
+
+/* Estilo do título */
+h1 {
+    color: #333;
+}
+
+/* Estilo do contador de movimentos */
+#moves {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+/* Grid do jogo */
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Estilo das cartas */
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    font-size: 40px;
+}
+
+/* Efeito de hover nas cartas */
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo das cartas viradas */
+.card.flipped {
+    background-color: #e0e0ff;
+}
+
+/* Ocultar elementos */
+.hidden {
+    display: none;
+}
+
+/* Estilo da mensagem de vitória */
+#win-message {
+    margin-top: 20px;
+}
+
+/* Estilo do botão de reinício */
+#restart-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
